@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Inter;
+  src: url("assets/fonts/Inter-VariableFont.ttf");
+}
+@font-face {
+  font-family: Merriweather;
+  src: url("assets/fonts/Merriweather.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+.nav {
+  margin-left: 780px;
+}
+.nav-list {
+  display: flex;
+  padding-left: 30px; 
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+}
+.nav-item {
+  margin-right: 31px;
+}
+.nav-item > a {
+  padding: 0;
+  color: #ffffff;
+  text-decoration: none;  
+  transition: color 0.5s;
+}
+.nav-item > a:hover {
+  color: #bdae82;
+}
+.header-container {
+  background: url('./assets/img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;  
+  transition: 0.3s;
+
+}
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+.switch-lng {
+  /* display: flex; */
+  width: 70px;
+  height: 50px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+}
+.en, .ru {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: inherit;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+}
+.en {
+  margin-left: -3px;
+  margin-right: 3px;
+  color: #bdae82;
+}
+.ru {
+  margin-left: 6px;
+  color: #ffffff;
+}
+.line {
+  margin-left: 3px;
+}
+.header {
+  display: flex;
+}
+.hero {
+  background-image: url('./assets/img/header-bg.jpg');
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+  padding-left: 80px;
+  padding-right: 860px;
+  padding-bottom: 450px;
+}
+.hero-title {
+  margin: 0;
+  margin-bottom: -10px;
+  padding: 0;
+  font-family: Merriweather, serif;
+  font-size: 60px;
+  line-height: 120px;
+  color: #ffffff;
+}
+.hero-text {
+  margin-bottom: 25px;
+  font-family: Inter, sans-serif;
+  width: 470px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.hero-btn {
+  width: 220px;
+  height: 55px;
+  border: none;
+  background-color: #bdae82;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  cursor: pointer
+}
