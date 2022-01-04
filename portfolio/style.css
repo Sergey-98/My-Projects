@@ -62,11 +62,8 @@ h2 {
   margin-top: 20px;
   margin-left: 20px;
   width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-repeat: no-repeat;  
+  height: 50px; 
   transition: 0.3s;
-
 }
 .logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
@@ -281,14 +278,34 @@ h2 {
 .photo {
   margin-top: -4px;
 }
-/* .video {
+.video {
   padding-top: 100px;
+  height: 945px;
   background-color: #000000;
 }
 .video-t {
   width: 154px;
 }
 .video-player {
-  margin: 0 auto;
-  padding: 0;
-} */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+}
+.play-btn {
+  position: absolute;
+  bottom: 307px;
+  border: none;
+  background-color: inherit;
+  background-image: url('./assets/svg/play.svg');
+  background-repeat: no-repeat;
+  background-size: 130px 130px;
+  width: 130px;
+  height: 130px;
+}
+.play-btn:hover {
+  cursor: pointer;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
