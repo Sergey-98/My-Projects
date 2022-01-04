@@ -16,6 +16,10 @@ body {
   margin: 0;
   padding: 0;
 }
+h2 {
+  margin: 0;
+  padding: 0;
+}
 .container {
     width: 1440px;
     margin: 0 auto;
@@ -108,7 +112,7 @@ body {
   padding-top: 160px;
   padding-left: 80px;
   padding-right: 860px;
-  padding-bottom: 450px;
+  padding-bottom: 330px;
 }
 .hero-title {
   margin: 0;
@@ -137,4 +141,79 @@ body {
   line-height: 40px;
   color: #000000;
   cursor: pointer
+}
+.skills {
+  padding-top: 100px;
+  background-color: #000000;
+}
+.s-title {
+  margin: 0 auto;
+  width: 48.6%;
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}
+.section-title {
+  margin: 0 auto;
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+  color: #bdae82;
+  background-color: #000000;
+}
+.skills-t {
+  width: 152px;
+}
+.skills-items {
+  display: flex;
+  justify-content: space-around;  
+  flex-wrap: wrap;
+}
+.skill-item {
+  margin-top: 60px;
+  width: 320px;
+  height: 240px;
+  background-position: center top;
+  color: #ffffff;
+
+}
+.item-title {
+  /* margin: 0 auto; */
+  margin-top: 100px;
+  /* width: 280px; */
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 40px;
+  text-align: center;
+}
+.item-text {
+  margin: 0 auto;
+  width: 280px;
+  font-family: Inter,  sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+}
+.skill-item:nth-child(1) {
+  background-image: url('./assets/svg/camera.svg');
+  background-repeat: no-repeat;
+  background-size: 62px 50px;
+}
+.skill-item:nth-child(2) {
+  background-image: url('./assets/svg/video.svg');
+  background-repeat: no-repeat;
+  background-size: 60px 50px;
+}
+.skill-item:nth-child(3) {
+  background-image: url('./assets/svg/image.svg');
+  background-repeat: no-repeat;
+  background-size: 66px 50px;
+}
+.skill-item:nth-child(4) {
+  background-image: url('./assets/svg/mic.svg');
+  background-repeat: no-repeat;
+  background-size: 32px 50px;
 }
