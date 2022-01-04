@@ -144,6 +144,7 @@ h2 {
 }
 .skills {
   padding-top: 100px;
+  padding-bottom: 2px;
   background-color: #000000;
 }
 .s-title {
@@ -217,3 +218,77 @@ h2 {
   background-repeat: no-repeat;
   background-size: 32px 50px;
 }
+.portfolio {
+  padding-top: 100px;
+  background-color: #000000;
+}
+.portfolio-t {
+  padding-right: 3px;
+  width: 220px;
+}
+.portfolio-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-right: 2px;
+  padding-bottom: 60px;
+}
+.seasons {
+  margin-top: 60px;
+  width: 220px;
+  height: 55px;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+.winter-btn {
+  color: #bdae82;
+  background-color: inherit;
+  border: 2px solid #bdae82;
+}
+.spring-btn {
+  color: #bdae82;
+  background-color: inherit;
+  border: 2px solid #bdae82;
+}
+.summer-btn {
+  color: #bdae82;
+  background-color: inherit;
+  border: 2px solid #bdae82;
+}
+.autumn-btn {
+  color: #000000;
+  background-color: #bdae82;
+}
+.portfolio-img {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0 auto;
+  height: 1145px;
+}
+.p-img {
+  margin: 0;
+  padding: 0;
+}
+
+.photo {
+  margin-top: -4px;
+}
+/* .video {
+  padding-top: 100px;
+  background-color: #000000;
+}
+.video-t {
+  width: 154px;
+}
+.video-player {
+  margin: 0 auto;
+  padding: 0;
+} */
