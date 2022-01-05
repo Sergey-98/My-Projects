@@ -383,3 +383,94 @@ h2 {
 .btns-hover:hover {
   color: #ffffff;
 }
+.contacts {
+  height: 700px;
+  background-image: url('./assets/img/contacts.jpg');
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+}
+.contacts-title {
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+}
+.contact-container {
+  width: 450px;
+  height: 445px;
+  padding-top: 60px;
+  margin-left: 970px;
+}
+.mail, .tel, .textarea {
+  border: 2px solid #bdae82;
+  background: transparent;
+}
+.mail {
+  margin-top: 40px;
+  padding-left: 17px;
+  width: 450px;
+  height: 50px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+}
+.tel {
+  margin-top: 20px;
+  padding-left: 17px;
+  width: 450px;
+  height: 50px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+}
+.textarea {
+  margin-top: 20px;
+  padding-left: 17px;
+  width: 450px;
+  height: 100px;
+  resize: none;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+}
+.mail::placeholder {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+}
+.tel::placeholder {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+}
+.textarea::placeholder {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+}
+.c-item-btn {
+  width: 220px;
+  height: 55px;
+  margin-top: 26px;
+  border: none;
+  background-color: #bdae82;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
