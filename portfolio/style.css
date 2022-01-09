@@ -8,6 +8,7 @@
   --fontstyle1: Inter, sans-serif;
   --fontstyle2: Merriweather, serif;
 }
+
 @font-face {
   font-family: Inter;
   src: url("assets/fonts/Inter-VariableFont.ttf");
