@@ -1,0 +1,147 @@
+:root {
+    --color-black: #000000;
+  }
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-black);
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -1;
+}
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 21em;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0.5em var(--color-black);
+    background-color: var(--color-black);
+    border-radius: 10px;
+}
+.controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #282828, #858585);
+    z-index: 1;
+}
+.poster {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 65%;
+    transition: 1s;
+    z-index: 2;
+    background-image: url(./assets/img/lemonade.png);
+    background-size: 100%;
+    background-position: 0 40%;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+.play {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/img/play.png);
+    background-size: 50px;
+    padding: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 10%;
+    top: 73%;
+}
+.next {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/img/forward.png);
+    background-size: 30px;
+    padding: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 80%;
+    top: 80%;
+}
+.prev {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/img/backward.png);
+    background-size: 30px;
+    padding: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 80%;
+    top: 72%;
+}
+.artist {
+    color: yellowgreen;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 3;
+    position: absolute;
+    top: 73%;
+    right: 43%;
+}
+.song-title {
+    width: 1%;
+    position: absolute;
+    color: white;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    top: 80%;
+    white-space: nowrap;
+    right: 70%;
+}
+.progress-song {
+    position: absolute;
+    top: 90%;
+    right: 32%;
+    z-index: 3;
+    /* padding-right: 10%; */
+    width: 50%;
+    height: 1%;
+    border-radius: 5%;
+}
+.current {
+    position: absolute;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    right: 70%;
+    top: 93%;
+}
+.duration {
+    position: absolute;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    right: 30%;
+    top: 86%;
+}
