@@ -1,0 +1,217 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    background-color: #cacaca;
+    /* max-width: 1920px; */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+.header-container {
+    /* border-bottom: 3px solid orange; */
+    padding-bottom: 1%;
+    min-height: 75px;
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.head-search {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.input {
+    width: 300px;
+    height: 25px;
+    padding-left: 35px;
+    color: #7c1900;
+    border: none;
+   border-bottom: 3px solid #36007c;
+   background: #cacaca;
+   outline: none;
+   font-size: 14px;
+   font-family: Tahoma;
+}
+.input:focus {
+    background: #eaddfc;
+}
+.input::placeholder {
+    color: #7c1900;
+}
+.hide {
+    visibility: hidden
+}
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+}
+
+.list {
+    padding: 5px 35px;
+    border: 1px solid #36007c;
+    background-color: #ba85ff;
+    color: white;
+    background-image: url('./assets/svg/hashtag.svg');
+    background-size: 15px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    bottom: calc(100% - 62%);
+    left: calc(100% - 97%);
+    background-image: url(./assets/svg/search.svg);
+    background-size: 16px;
+    z-index: 5;
+    cursor: pointer;
+}
+.close-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    bottom: calc(100% - 37%);
+    left: calc(100% - 8%);
+    background-image: url(./assets/svg/cross.svg);
+    background-size: 16px;
+    z-index: 5;
+    cursor: pointer;
+}
+.wave {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 5px;
+}
+.line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+}
+.line1 {
+    background: linear-gradient(45deg, transparent, transparent 49%, #36007c 49%, transparent 51%);
+}
+.line2 {
+    background: linear-gradient(-45deg, transparent, transparent 49%, #36007c 49%, transparent 51%);
+}
+.line {
+    background-size: 10px 10px;
+}
+.header-title {
+    color: #36007c;
+}
+.photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.gallery-img {
+    width: 380px;
+    height: 214px;
+    cursor: pointer;
+    box-shadow:1px 60px 100px 9px rgba(130,107,168,0.61);
+}
+
+.modal.active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+.close-modal.active {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: calc(100% - 8%);
+    left: calc(100% - 5%);
+    background-image: url(./assets/svg/cross.svg);
+    background-color: #777777;
+    opacity: 0.5;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.next-img.active {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: calc(100% - 50%);
+    left: calc(100% - 10%);
+    background-image: url(./assets/svg/next.svg);
+    background-color: #777777;
+    opacity: 0.5;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.next-img.active:hover {
+    opacity: 1;
+}
+.prev-img.active:hover {
+    opacity: 1;
+}
+.close-modal.active:hover {
+    opacity: 1;
+}
+.prev-img.active {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: calc(100% - 50%);
+    left: calc(100% - 95%);
+    background-image: url(./assets/svg/next.svg);
+    background-color: #777777;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.photos.active {
+    opacity: 0.4;
+}
+
+.f-github {
+    color: var(--color-white);;
+    text-decoration: none;
+}
+
+.footer {
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7%;
+    font-size: 120%;
+    background-color: #502f35;
+    font-weight: 900;
+    opacity: .8;
+    color: var(--color-white);
+}
