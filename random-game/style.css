@@ -1,0 +1,287 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+  }
+
+body {
+    margin: 0;
+    max-width: 1920px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.score {
+    background-color: #4e4e4e;
+    width: 10%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    color: white;
+}
+.main-container {
+    background-image: url(./assets/img/background-main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color: #ff7474; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#canvas {
+    display: block;
+}
+.modal {
+    position: absolute;
+    margin: auto;
+    border: 1px solid #161618;
+    height: 150px;
+    width: 220px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #00008d;
+    background-color: #e93d3d;
+    border-radius: 5px;
+}
+.modal.active {
+    display: flex;
+}
+.restart {
+    width: 50%;
+    background: inherit;
+    border: 1px solid #502f35;
+    cursor: pointer;
+    color: #00008d;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.clear {
+    position: absolute;
+    left: 23%;
+    top: 105%;
+    width: 60%;
+    height: 10%;
+    background: inherit;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.restart:hover {
+    box-shadow: 3px 3px 3px 3px #2e0101;
+}
+.clear:hover {
+    box-shadow: 3px 3px 3px 3px #979797;
+}
+.score-date {
+    width: 80px;
+}
+.level {
+    position: absolute;
+    top: 77%;
+    left: 45.5%;
+    padding: 5px;
+    background-color: inherit;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.var-level {
+    background-color: #2e0101;
+}
+.table-title {
+    margin-bottom: 5px;
+    font-family: Verdana Tahoma, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+th, td {
+    padding: 4px;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+.table-result {
+    position: absolute;
+    left: 67%;
+}
+.results {
+    
+    border: 1px solid #502f35;;
+}
+.modal-title {
+    margin-top: 10px;
+}
+
+.field {
+    background-color: #6a6aff;
+    box-shadow: 0px 0px 60px 5px #161618;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url(./assets/svg/field-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.f-github {
+    padding-top: 1%;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.year {
+    margin: 0;
+    padding-top: 1%;
+}
+.rsschool {
+    filter: invert(100%);
+}
+.footer {
+    position: absolute;
+    top: 93%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7%;
+    font-size: 120%;
+    background-color: #502f35;
+    font-weight: 900;
+    opacity: .8;
+    color: var(--color-white);
+}
+
+/* //----------------- Player in game -----------------------// */
+.player {
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    top: 65%;
+    left: 8%;
+}
+.controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(#00b469, #00b62d);
+    z-index: 1;
+}
+.play {
+    position: absolute;
+    width: 40%;
+    height: 42%;
+    background-image: url(./assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    padding: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 5%;
+    top: 10%;
+}
+.next {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-image: url(./assets/svg/forward.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 81%;
+    top: 25%;
+}
+.prev {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-image: url(./assets/svg/backward.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding: 0;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 72%;
+    top: 25%;
+}
+.artist {
+    color: yellowgreen;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    white-space: nowrap;
+    z-index: 3;
+    position: absolute;
+    width: 20%;
+    top: 15%;
+    right: 56%;
+}
+.song-title {
+    width: 1%;
+    position: absolute;
+    color: var(--color-white);
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    top: 40%;
+    white-space: nowrap;
+    right: 75%;
+}
+.progress-song {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 74%;
+    z-index: 3;
+    cursor: pointer;
+    width: 99%;
+    height: 1%;
+    border-radius: 5%;
+}
+.current {
+    position: absolute;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--color-white);
+    right: 88%;
+    top: 60%;
+}
+.duration {
+    position: absolute;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--color-white);
+    right: 3%;
+    top: 60%;
+}
+.vol-mute {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(./assets/svg/unmute.svg);
+    background-size: 25px;
+    z-index: 3;
+    cursor: pointer;
+    filter: invert(100%);
+    left: 90%;
+    top: 5%;
+}
+
+@media (max-width: 1439px) { 
+    .level {
+        top: 87%;
+    }
+  }
